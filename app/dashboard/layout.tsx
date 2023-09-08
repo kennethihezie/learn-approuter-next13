@@ -24,12 +24,10 @@ prop that will be populated with a child layout (if it exists)
 or a child page during rendering.
 */
 export default function DashboardLayout({children}: {children: React.ReactNode}){
-    
     return (
         <section>
               {/* Include shared UI here e.g. a header or sidebar */}
               <nav></nav>
-
               { children }
         </section>
     )

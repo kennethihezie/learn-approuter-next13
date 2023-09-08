@@ -17,5 +17,6 @@ export default function Page(){
  route ============	Server-side API endpoint
  template	=========== Specialized re-rendered Layout UI
  default	=========== Fallback UI for Parallel Routes
-
 */
+
+//continue from parallel routes
