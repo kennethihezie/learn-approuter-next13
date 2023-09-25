@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-
 /*
  Metadata can be defined by exporting a metadata object or
  generateMetadata function in a layout.js or page.js file.
@@ -23,12 +22,25 @@ from a layout.js file. The component should accept a children
 prop that will be populated with a child layout (if it exists) 
 or a child page during rendering.
 */
-export default function DashboardLayout({children}: {children: React.ReactNode}){
+export default function Layout({children}: {children: React.ReactNode}){
+ 
     return (
         <section>
               {/* Include shared UI here e.g. a header or sidebar */}
-              <nav></nav>
+              <nav className='flex flex-row justify-between items-center py-4 px-12 bg-purple-300'>
+                <div className="text-2xl">Home</div>
+
+                <div className="flex flex-row justify-between items-center space-x-8">
+                  <div className="text-md">Itme 1</div>
+                  <div className="text-md">Itme 2</div>
+                  <div className="text-md">Itme 3</div>
+                  <div className="text-md">Itme 4</div>
+                </div>
+              </nav>
               { children }
+              <footer className='flex flex-row justify-start items-center py-8 px-6 bg-green-300'>
+                <div className="text-2xl">Am a footer</div>
+              </footer>
         </section>
     )
 }

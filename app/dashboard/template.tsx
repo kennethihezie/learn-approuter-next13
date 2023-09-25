@@ -1,3 +1,4 @@
+
 /*
 Templates are similar to layouts in that they wrap each child 
 layout or page. Unlike layouts that persist across routes and
@@ -20,6 +21,7 @@ For example:
   For templates, the fallback is shown on each navigation.
 */
 export default function Template({ children }: { children: React.ReactNode }) {
+    
     return <div>{children}</div>
 }
 
